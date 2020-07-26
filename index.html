@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"On Stage"</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+<body>
+<h1>Welcome to Play House</h1>
+	<div class = "lay">
+		<h3>Acting | Comedy | Dancing</h3>
+		<p> Home to Theatresports, Stand-up Comedians, Dancers, Singer</p>
+	</div>
+	<div class="row">
+  <div class="column">
+    <img src="images/comedy.jpg" alt="comedy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/dance.jpg" alt="dance" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/sing.jfif" alt="Singing" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/acting.jfif" alt="acting" style="width:100%">
+  </div>
+
+</div>
+<div style = "background-color:#d5f5b5;">
+<h2> Upcoming Events</h2>
+</div>
+	<div>
+	<table id="table">
+  <tr>
+    <th>Sr.no</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone No</th>
+    <th>Gender</th>
+    <th>Venue</th>
+    <th>Event</th>
+    <th>Published at</th>
+    <th>Event Date & Time</th>
+    <th>Description</th>
+  </tr>
+  </table>
+</div>	
+<h2> Register Now..<br> And show your Talent </h2>
+<div class="form_container">
+	<form id="forms">
+		<div>
+			<label for="name">Name :</label>
+			<input type="text" id="name" placeholder="Name" name="" required>
+			<label for="email">Email :</label>
+			<input type="email" id = "email" placeholder="xyz@abc.com" name="" required>
+		</div><br>
+		<div>
+			<label for="phone">Phone No:</label>
+			<input type="Phone" id = "phone" placeholder="Phone no here" name="" required>
+		</div><br>
+		<div>
+			<label for="name">Gender :</label>
+			<label><input type="radio" id = "male" name="Gender" required>Male</label>
+			<label><input type="radio" id = "female" name="Gender" required>Female</label>
+			<label><input type="radio" id = "other" name="Gender" required>Other</label>
+		</div><br>
+		<div>
+			<label for="Venue">Venue :</label>
+			<label><input type="radio" id = "pune" name="Venue" required>Pune Stage</label>
+			<label><input type="radio" id = "mumbai" name="Venue" required>Mumbai Stage</label>
+			<label><input type="radio" id = "delhi" name="Venue" required>Delhi Stage</label>
+		</div><br>
+			<label for="Event">Event :</label><br>
+		<div class="cb">
+			<label><input type="checkbox" id="Dancing" name="Event">Dancing</label><br>
+			<label><input type="checkbox" id="Singing" name="Event">Singing</label><br>
+			<label><input type="checkbox" id="Comedy" name="Event">Standup Comedy</label><br>
+			<label><input type="checkbox" id="Acting" name="Event">Acting</label><br>
+		</div><br>
+		<div>
+			<label for="date">Event Date :</label>
+			<input type="date" id="date" name="date">
+			<label for="time">Event Time :</label>
+			<input type="time" id="time" name="time">
+		</div><br>
+			<label for="desc"> Description :</label>
+			<input type="textarea" id = "desc" name="" required style="height: 100px; width: 200px">	
+		<br><br><br><br>
+
+
+  	<input type="submit" onclick="calljs();" class = "button">
+	</form>
+</div>
+<script src="script.js"></script>
+</body>
+<footer>
+	<hr>
+	<code>Copyright (c) 2020 Play House </code>
+</footer>
+
+</html>
